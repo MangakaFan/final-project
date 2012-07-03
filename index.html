@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Final-project : A piece of a human spine" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Final-project</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/MangakaFan/final-project">View on GitHub</a>
+
+          <h1 id="project_title">Final-project</h1>
+          <h2 id="project_tagline">A piece of a human spine</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/MangakaFan/final-project/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/MangakaFan/final-project/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Introduction</h1>
+
+<p>My personal project represents a piece of a human spine, in particular three lumbar vertebrae, the spinal cord inside of these and the spinal nerves. I chose to modeled three vertebrae because one in my opinion wasn’t enough, but the complete human spine was too much. So, I thought that three would have been the perfect number.</p>
+
+<h1>Project</h1>
+
+<p>The approach for modelling the project was to study the anatomy of the objects to be built. For this purpose some medical illustration taken from an anatomy book were used. After,these object were divided into different parts and modeled one part at a time. 
+While modeling, the code has been separated in different functions for each part, named as the component it has meant to draw. For example, the function that builds the surface of the vertebral body is called 'VertebralBody' (in Italian 'CorpoVertebrale'). In this way it’s easy to understand the scope of the functions.<br>
+A ‘coordinate grid’ was necessary to help the developer to build the model and adjust it’s various parts.
+Moreover, the model is built using only Bezier surfaces (based on Bezier curves). </p>
+
+<h1>Model</h1>
+
+<p>First of all the components of  a vertebra have been modeled. In order:</p>
+
+<ul>
+<li>Vertical body</li>
+<li>Spinous process</li>
+<li>Articular processes</li>
+<li>Transverse processes
+<img src="https://github.com/MangakaFan/final-project/blob/master/material/project%201.jpg" alt="Three vertebrae">
+Than the Intervertebral disk was created and the various parts were adjusted to look for the best position and shape. The last things to be modelled were: </li>
+<li>Spinal cord (with it’s various part)
+
+<ul>
+<li>Dura matter</li>
+<li>White matter</li>
+<li>Gray matter</li>
+</ul>
+</li>
+<li>Spinal nerves
+<img src="https://github.com/MangakaFan/final-project/blob/master/material/project%204.jpg" alt="Spinal cord">
+The last part of the project has been the merging of all the parts to compose the complete model.
+During the modeling process, in particular when building a new part of the model, I changed the alpha component of the model’s colors to 0,75. In this way I always can see through the model and adjust the various curves and surfaces.<br>
+</li>
+</ul><h1>Captions</h1>
+
+<p>To make the model similar to a medical illustration some captions were added to illustrate principal components of the model. To make this possible, a model for each of the 26 English characters was made (using the TRIANGLE_FAN function) and composed to build the captions.
+The result is a very beautiful effect.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Final-project maintained by <a href="https://github.com/MangakaFan">MangakaFan</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
